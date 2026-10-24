@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You · Raveendra</title>
+<meta name="description" content="36 glorious years at TVS Electronics — a heartfelt thank you from Raveendra.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thank You · Raveendra · 36 Years at TVS Electronics">
+<meta property="og:description" content="A heartfelt thank you to everyone who was part of the journey, 1990 – 2026.">
+<meta property="og:url" content="https://vaibhav-pyy.github.io/raveendra-retirement/">
+<meta property="og:image" content="https://vaibhav-pyy.github.io/raveendra-retirement/raveendra.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Great+Vibes&family=Yatra+One&family=Poppins:wght@300;400;600&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --maroon: #5c0a1e;
+    --maroon-deep: #2b0410;
+    --red: #a3122a;
+    --gold: #f5c542;
+    --gold-deep: #c8901a;
+    --gold-light: #ffe9a3;
+    --marigold: #ff9f1c;
+    --saffron: #ff6b1a;
+    --pink: #e8457c;
+    --leaf: #2f8a3c;
+    --parchment: #fbf1d9;
+    --ink: #3b1d0b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--maroon-deep);
+    color: var(--gold-light);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ---------- floating layers ---------- */
+  #fireworks { position: fixed; inset: 0; pointer-events: none; z-index: 60; }
+  #petals { position: fixed; inset: 0; pointer-events: none; z-index: 55; overflow: hidden; }
+  .petal {
+    position: absolute; top: -40px;
+    width: 14px; height: 18px;
+    border-radius: 60% 0 60% 0;
+    opacity: .9;
+    animation: fall linear forwards;
+  }
+  @keyframes fall {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(40px, 25vh) rotate(160deg); }
+    50%  { transform: translate(-30px, 55vh) rotate(320deg); }
+    75%  { transform: translate(35px, 80vh) rotate(480deg); }
+    100% { transform: translate(-10px, 110vh) rotate(640deg); }
+  }
+
+  /* ---------- toran (marigold garland) ---------- */
+  .toran {
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 90px; z-index: 30;
+    display: flex; justify-content: space-around;
+    pointer-events: none;
+  }
+  .toran::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 14px;
+    background: repeating-radial-gradient(circle at 7px 7px, var(--marigold) 0 6px, var(--saffron) 6px 7px, transparent 7px 14px);
+    background-size: 14px 14px;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,.5));
+  }
+  .strand { display: flex; flex-direction: column; align-items: center; transform-origin: top center; animation: sway 3s ease-in-out infinite alternate; }
+  .strand:nth-child(even) { animation-delay: -1.5s; }
+  @keyframes sway { from { transform: rotate(-4deg); } to { transform: rotate(4deg); } }
+  .bloom {
+    width: 16px; height: 16px; border-radius: 50%; margin-top: -2px;
+    background: radial-gradient(circle at 40% 35%, #ffd36b, var(--marigold) 50%, var(--saffron));
+    box-shadow: 0 0 0 2px rgba(255,107,26,.3) inset;
+  }
+  .bloom.red { background: radial-gradient(circle at 40% 35%, #ff8a9a, var(--red) 60%, #6d0716); }
+  .leaf-tip {
+    width: 14px; height: 24px; margin-top: -2px;
+    background: linear-gradient(135deg, #5cc46a, var(--leaf));
+    border-radius: 0 100% 0 100%;
+    transform: rotate(45deg);
+  }
+
+  /* ---------- 1. curtain stage ---------- */
+  #stage { height: 320vh; position: relative; }
+  .sticky {
+    position: sticky; top: 0; height: 100vh; overflow: hidden;
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(255,190,80,.35), transparent 60%),
+      radial-gradient(ellipse at 50% 120%, #7a1026, var(--maroon-deep) 70%);
+  }
+  .hero {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 100px 16px 40px;
+    opacity: .15; transform: scale(.85);
+  }
+  .frame-wrap { position: relative; width: min(62vw, 270px); aspect-ratio: 1; margin: 40px 0 70px; }
+  .mandala {
+    position: absolute; inset: -38%; width: 176%; height: 176%;
+    animation: spin 60s linear infinite;
+    opacity: .85;
+  }
+  .mandala.slow { animation-duration: 90s; animation-direction: reverse; inset: -55%; width: 210%; height: 210%; opacity: .35; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .photo-frame {
+    position: absolute; inset: 0; border-radius: 50%;
+    padding: 8px;
+    background: conic-gradient(from 0deg, var(--gold), var(--gold-deep), var(--gold-light), var(--gold-deep), var(--gold));
+    box-shadow: 0 0 40px rgba(245,197,66,.6), 0 0 100px rgba(255,107,26,.35);
+  }
+  .photo-frame img {
+    width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
+    border: 4px solid var(--maroon);
+    display: block;
+  }
+  .kicker, .name, .sub, .badge { position: relative; z-index: 2; }
+  .kicker {
+    font-family: 'Yatra One', cursive; color: var(--marigold);
+    font-size: clamp(1rem, 3.5vw, 1.4rem); letter-spacing: 2px;
+    text-shadow: 0 0 8px var(--maroon-deep), 0 0 16px var(--maroon-deep);
+  }
+  .name {
+    font-family: 'Cinzel Decorative', serif; font-weight: 900;
+    font-size: clamp(2.4rem, 10vw, 5.5rem); line-height: 1.05;
+    background: linear-gradient(180deg, #fff6d0 0%, var(--gold) 45%, var(--gold-deep) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 4px 0 rgba(0,0,0,.35)) drop-shadow(0 0 25px rgba(245,197,66,.45));
+    margin: 4px 0 8px;
+  }
+  .sub { font-size: clamp(.95rem, 3vw, 1.2rem); color: var(--gold-light); opacity: .9; }
+  .sub b { color: var(--gold); }
+  .badge {
+    display: inline-block; margin-top: 14px; padding: 6px 18px;
+    border: 1.5px solid var(--gold); border-radius: 999px;
+    font-size: .8rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold);
+    background: rgba(0,0,0,.25);
+  }
+
+  .curtain {
+    position: absolute; top: 0; bottom: 0; width: 51%; z-index: 20;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,.45), transparent 8%, rgba(255,255,255,.08) 14%, transparent 22%, rgba(0,0,0,.35) 30%, transparent 38%, rgba(255,255,255,.06) 46%, transparent 54%, rgba(0,0,0,.35) 62%, transparent 70%, rgba(255,255,255,.08) 78%, transparent 86%, rgba(0,0,0,.4) 100%),
+      linear-gradient(180deg, #8f0f26, #b3162f 40%, #6e0a1c);
+    background-size: 120px 100%, 100% 100%;
+    box-shadow: 0 0 60px rgba(0,0,0,.7);
+    will-change: transform;
+  }
+  .curtain::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 34px;
+    background:
+      repeating-linear-gradient(90deg, var(--gold) 0 3px, var(--gold-deep) 3px 6px);
+    -webkit-mask: linear-gradient(180deg, #000 30%, transparent);
+            mask: linear-gradient(180deg, #000 30%, transparent);
+  }
+  .curtain.left  { left: 0;  transform-origin: left; }
+  .curtain.right { right: 0; transform-origin: right; }
+  .curtain .tassel {
+    position: absolute; top: 68%; width: 22px; height: 70px;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold) 40%, var(--gold-deep));
+    border-radius: 50% 50% 4px 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.5);
+  }
+  .curtain.left .tassel { right: 14px; }
+  .curtain.right .tassel { left: 14px; }
+  .curtain-title {
+    position: absolute; top: 50%; left: 50%; z-index: 25;
+    transform: translate(-50%, -50%);
+    text-align: center; width: min(92vw, 640px);
+    pointer-events: none;
+  }
+  .curtain-title h1 {
+    font-family: 'Cinzel Decorative', serif; font-weight: 900;
+    font-size: clamp(1.8rem, 7vw, 3.6rem);
+    color: var(--gold);
+    text-shadow: 0 3px 0 #4a0613, 0 0 30px rgba(245,197,66,.6);
+  }
+  .curtain-title p { font-family: 'Yatra One', cursive; color: var(--gold-light); font-size: clamp(1rem, 3.5vw, 1.35rem); margin-top: 10px; }
+  .scroll-hint {
+    margin-top: 34px; display: inline-flex; flex-direction: column; align-items: center; gap: 8px;
+    font-size: .8rem; letter-spacing: 4px; text-transform: uppercase; color: var(--gold);
+  }
+  .scroll-hint span.arrow {
+    width: 26px; height: 42px; border: 2px solid var(--gold); border-radius: 14px; position: relative;
+  }
+  .scroll-hint span.arrow::after {
+    content: ''; position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px;
+    background: var(--gold); border-radius: 2px; animation: wheel 1.6s infinite;
+  }
+  @keyframes wheel { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(14px); } }
+  .valance {
+    position: absolute; top: 0; left: 0; right: 0; height: 70px; z-index: 22;
+    background: linear-gradient(180deg, #5c0a1e, #8f0f26);
+    -webkit-mask: radial-gradient(circle at 50% 100%, transparent 28px, #000 29px) 0 0 / 80px 100%;
+            mask: radial-gradient(circle at 50% 100%, transparent 28px, #000 29px) 0 0 / 80px 100%;
+    border-bottom: 3px solid var(--gold);
+  }
+
+  /* ---------- diyas ---------- */
+  .diyas { display: flex; justify-content: center; gap: clamp(18px, 5vw, 48px); flex-wrap: wrap; }
+  .diya { position: relative; width: 56px; height: 60px; }
+  .diya .bowl {
+    position: absolute; bottom: 0; left: 0; width: 56px; height: 24px;
+    background: linear-gradient(180deg, #e0752b, #8a3510);
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    box-shadow: inset 0 4px 0 #ffb45c;
+  }
+  .diya .bowl::before {
+    content: ''; position: absolute; top: 8px; left: 10px; right: 10px; height: 3px;
+    background: repeating-linear-gradient(90deg, var(--gold) 0 4px, transparent 4px 8px);
+  }
+  .diya .flame {
+    position: absolute; bottom: 20px; left: 50%; width: 14px; height: 30px; margin-left: -7px;
+    background: radial-gradient(ellipse at 50% 75%, #fff 0 15%, #ffe066 30%, #ff9a1c 60%, rgba(255,80,0,0) 75%);
+    border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+    transform-origin: bottom center;
+    animation: flicker .18s infinite alternate;
+    filter: drop-shadow(0 0 10px #ffb02e) drop-shadow(0 0 22px rgba(255,140,0,.7));
+  }
+  @keyframes flicker {
+    0% { transform: scale(1, 1) rotate(-2deg); }
+    100% { transform: scale(.92, 1.08) rotate(2deg); }
+  }
+
+  /* ---------- section shells ---------- */
+  section.panel { position: relative; padding: 110px 16px; overflow: hidden; }
+  .section-title {
+    font-family: 'Cinzel Decorative', serif; font-weight: 700; text-align: center;
+    font-size: clamp(1.6rem, 6vw, 3rem); color: var(--gold);
+    text-shadow: 0 2px 0 #3d0410, 0 0 20px rgba(245,197,66,.4);
+  }
+  .divider { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 14px auto 40px; color: var(--gold); }
+  .divider::before, .divider::after { content: ''; height: 2px; width: min(22vw, 140px); background: linear-gradient(90deg, transparent, var(--gold)); }
+  .divider::after { transform: scaleX(-1); }
+
+  .reveal { opacity: 0; transform: translateY(50px); transition: opacity 1.1s ease, transform 1.1s cubic-bezier(.2,.8,.2,1); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ---------- 2. timer ---------- */
+  #journey {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+    background: var(--maroon-deep);
+  }
+  .company-bg {
+    position: absolute; inset: 0; z-index: 0;
+    background-size: cover; background-position: center; background-attachment: fixed;
+  }
+  .company-bg.fallback {
+    background:
+      radial-gradient(ellipse at 50% 30%, rgba(255,170,60,.25), transparent 60%),
+      linear-gradient(180deg, #2b0410, #1a0208);
+  }
+  .company-bg svg { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: max(100%, 900px); height: auto; opacity: .4; }
+  .company-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(43,4,16,.92), rgba(43,4,16,.55) 40%, rgba(43,4,16,.9));
+  }
+  #journey .inner { position: relative; z-index: 2; max-width: 1050px; margin: 0 auto; width: 100%; }
+  .company-name {
+    text-align: center; font-family: 'Yatra One', cursive; color: var(--gold-light);
+    font-size: clamp(1rem, 3.5vw, 1.3rem); margin-bottom: 6px;
+  }
+  .dates { display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; text-align: center; }
+  .date-chip { padding: 10px 18px; border-radius: 14px; border: 1px solid rgba(245,197,66,.5); background: rgba(0,0,0,.35); backdrop-filter: blur(4px); }
+  .date-chip small { display: block; font-size: .7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--marigold); }
+  .date-chip b { font-size: 1.05rem; color: var(--gold-light); }
+  .dates .dash { color: var(--gold); font-size: 1.4rem; }
+
+  .clock { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(8px, 2vw, 18px); }
+  .unit {
+    position: relative; text-align: center; padding: 22px 6px 16px; border-radius: 18px;
+    background: linear-gradient(160deg, rgba(163,18,42,.85), rgba(60,5,20,.9));
+    border: 2px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,.5), inset 0 0 20px rgba(245,197,66,.15);
+  }
+  .unit::before {
+    content: '✦'; position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+    color: var(--gold); background: var(--maroon); padding: 0 6px; font-size: .9rem;
+  }
+  .unit .num {
+    font-family: 'Cinzel Decorative', serif; font-weight: 900;
+    font-size: clamp(1.6rem, 5vw, 3.4rem); color: var(--gold);
+    text-shadow: 0 0 18px rgba(245,197,66,.5);
+    font-variant-numeric: tabular-nums;
+  }
+  .unit .lbl { font-size: clamp(.6rem, 1.6vw, .8rem); letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); opacity: .85; }
+  .timer-note { text-align: center; margin-top: 30px; font-size: clamp(.95rem, 2.8vw, 1.15rem); color: var(--gold-light); }
+  .timer-note b { color: var(--gold); font-size: 1.15em; }
+  .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 40px; }
+  .stat { text-align: center; padding: 18px 8px; border-top: 2px solid var(--gold-deep); }
+  .stat .big { font-family: 'Yatra One', cursive; font-size: clamp(1.4rem, 4.5vw, 2.4rem); color: var(--marigold); }
+  .stat .small { font-size: .8rem; opacity: .85; }
+
+  /* ---------- 3. letter ---------- */
+  #letter {
+    background:
+      radial-gradient(circle at 20% 20%, rgba(255,159,28,.12), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(232,69,124,.12), transparent 40%),
+      var(--maroon);
+  }
+  .rangoli-bg { position: absolute; width: 520px; height: 520px; opacity: .12; animation: spin 120s linear infinite; pointer-events: none; }
+  .rangoli-bg.a { top: -160px; left: -160px; }
+  .rangoli-bg.b { bottom: -160px; right: -160px; animation-direction: reverse; }
+  .scroll-paper { max-width: 720px; margin: 0 auto; position: relative; perspective: 1200px; }
+  .rod {
+    height: 26px; border-radius: 13px; position: relative; z-index: 3;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold) 40%, var(--gold-deep));
+    box-shadow: 0 6px 14px rgba(0,0,0,.5);
+    margin: 0 -18px;
+  }
+  .rod::before, .rod::after {
+    content: ''; position: absolute; top: -6px; width: 38px; height: 38px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff2bf, var(--gold) 50%, var(--gold-deep));
+  }
+  .rod::before { left: -18px; } .rod::after { right: -18px; }
+  .paper {
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(200,144,26,.18), transparent 50%),
+      radial-gradient(ellipse at 50% 100%, rgba(200,144,26,.18), transparent 50%),
+      var(--parchment);
+    color: var(--ink);
+    padding: 0 clamp(22px, 6vw, 64px);
+    max-height: 0; overflow: hidden;
+    transition: max-height 2.4s cubic-bezier(.6,0,.2,1), padding 2.4s;
+    border-left: 6px double var(--gold-deep); border-right: 6px double var(--gold-deep);
+    position: relative;
+  }
+  .scroll-paper.open .paper { max-height: 1600px; padding-top: 44px; padding-bottom: 44px; }
+  .paper .om { text-align: center; font-size: 1.8rem; color: var(--red); margin-bottom: 10px; }
+  .paper p {
+    font-family: 'Kalam', cursive; font-size: clamp(1.05rem, 3.2vw, 1.3rem); line-height: 1.75;
+    margin-bottom: 16px;
+    opacity: 0; transform: translateY(14px); filter: blur(4px);
+    transition: opacity 1s, transform 1s, filter 1s;
+  }
+  .paper p.show { opacity: 1; transform: none; filter: none; }
+  .paper .greet { font-weight: 700; color: var(--red); }
+  .signoff { margin-top: 26px; text-align: right; }
+  .signoff .with { font-family: 'Kalam', cursive; font-size: 1.15rem; opacity: 0; transition: opacity 1s; }
+  .signature {
+    display: inline-block; font-family: 'Great Vibes', cursive;
+    font-size: clamp(2.8rem, 10vw, 4.4rem); color: #1b2f8a; line-height: 1.3;
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 3s cubic-bezier(.5,0,.3,1);
+    padding-right: 8px;
+  }
+  .signoff.show .with { opacity: 1; }
+  .signoff.show .signature { clip-path: inset(0 0 0 0); }
+  .signoff .meta { font-size: .85rem; opacity: 0; transition: opacity 1s 3s; color: #6b3a14; }
+  .signoff.show .meta { opacity: .85; }
+  .seal {
+    position: absolute; bottom: 30px; left: clamp(18px, 6vw, 60px);
+    width: 86px; height: 86px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #e0405a, #8f0f26 60%, #5c0a1e);
+    display: grid; place-items: center;
+    color: var(--gold-light); font-family: 'Cinzel Decorative', serif; font-weight: 900; font-size: 1.6rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.35), inset 0 0 0 4px rgba(255,255,255,.12), inset 0 0 0 8px rgba(0,0,0,.15);
+    transform: scale(3) rotate(-25deg); opacity: 0;
+    transition: transform .5s cubic-bezier(.3,1.6,.5,1) 3.2s, opacity .3s 3.2s;
+  }
+  .signoff.show ~ .seal { transform: scale(1) rotate(-12deg); opacity: 1; }
+
+  /* ---------- 4. contact ---------- */
+  #connect {
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(245,197,66,.18), transparent 60%),
+      linear-gradient(180deg, var(--maroon), var(--maroon-deep));
+    text-align: center;
+  }
+  .connect-lead { max-width: 560px; margin: 0 auto 40px; font-size: 1.05rem; opacity: .9; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; max-width: 980px; margin: 0 auto 60px; }
+  .card {
+    position: relative; display: block; text-decoration: none; color: inherit;
+    padding: 30px 20px 26px; border-radius: 22px;
+    background: linear-gradient(160deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+    border: 1.5px solid rgba(245,197,66,.55);
+    transition: transform .35s, box-shadow .35s, border-color .35s;
+    overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; inset: -2px;
+    background: linear-gradient(120deg, transparent 30%, rgba(255,233,163,.35), transparent 70%);
+    transform: translateX(-100%); transition: transform .8s;
+  }
+  .card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,.5), 0 0 30px rgba(245,197,66,.35); border-color: var(--gold); }
+  .card:hover::before { transform: translateX(100%); }
+  .card .ico {
+    width: 64px; height: 64px; margin: 0 auto 14px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: radial-gradient(circle at 35% 30%, var(--gold-light), var(--gold) 50%, var(--gold-deep));
+    color: var(--maroon); box-shadow: 0 0 20px rgba(245,197,66,.5);
+  }
+  .card .ico svg { width: 30px; height: 30px; }
+  .card h3 { font-family: 'Yatra One', cursive; color: var(--gold); font-size: 1.3rem; font-weight: 400; }
+  .card p { margin-top: 6px; font-size: 1rem; word-break: break-word; color: var(--gold-light); }
+  .card .tap { display: inline-block; margin-top: 12px; font-size: .7rem; letter-spacing: 3px; text-transform: uppercase; color: var(--marigold); }
+  .copy-toast {
+    position: fixed; left: 50%; bottom: 30px; transform: translate(-50%, 120px);
+    background: var(--gold); color: var(--maroon); padding: 12px 22px; border-radius: 999px; font-weight: 600;
+    z-index: 80; transition: transform .4s cubic-bezier(.3,1.5,.5,1); box-shadow: 0 10px 30px rgba(0,0,0,.4);
+  }
+  .copy-toast.show { transform: translate(-50%, 0); }
+
+  .final-wish {
+    font-family: 'Cinzel Decorative', serif; font-weight: 900;
+    font-size: clamp(1.6rem, 6.5vw, 3.4rem);
+    background: linear-gradient(90deg, var(--gold-deep), var(--gold-light), var(--gold), var(--gold-light), var(--gold-deep));
+    background-size: 200% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: shimmer 4s linear infinite;
+    margin: 50px 0 10px;
+  }
+  @keyframes shimmer { to { background-position: -200% 0; } }
+  .launch {
+    margin-top: 20px; font: inherit; cursor: pointer;
+    padding: 14px 30px; border-radius: 999px; border: none;
+    background: linear-gradient(180deg, var(--marigold), var(--saffron));
+    color: #fff; font-weight: 600; letter-spacing: 1px; font-size: 1rem;
+    box-shadow: 0 8px 0 #a33e08, 0 14px 30px rgba(0,0,0,.4);
+    transition: transform .15s, box-shadow .15s;
+  }
+  .launch:active { transform: translateY(6px); box-shadow: 0 2px 0 #a33e08, 0 6px 14px rgba(0,0,0,.4); }
+
+  /* ---------- 5. credits ---------- */
+  footer {
+    position: relative; padding: 80px 16px 50px; text-align: center;
+    background: #160107;
+    border-top: 3px solid var(--gold-deep);
+  }
+  footer::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 12px;
+    background: repeating-linear-gradient(90deg, var(--gold) 0 10px, var(--red) 10px 20px, var(--leaf) 20px 30px, var(--marigold) 30px 40px);
+    opacity: .7;
+  }
+  .credit-label { font-size: .75rem; letter-spacing: 5px; text-transform: uppercase; color: var(--marigold); }
+  .credit-name { font-family: 'Great Vibes', cursive; font-size: clamp(2.6rem, 9vw, 4rem); color: var(--gold); margin: 6px 0 0; line-height: 1.2; }
+  .credit-sub { font-size: .95rem; opacity: .85; margin-bottom: 26px; }
+  .credit-sub .heart { color: var(--pink); display: inline-block; animation: beat 1.2s infinite; }
+  @keyframes beat { 0%,100% { transform: scale(1); } 15% { transform: scale(1.3); } 30% { transform: scale(1); } 45% { transform: scale(1.2); } }
+  .socials { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+  .social {
+    display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+    padding: 12px 22px; border-radius: 999px;
+    border: 1.5px solid var(--gold); color: var(--gold-light);
+    transition: background .3s, color .3s, transform .3s;
+  }
+  .social svg { width: 20px; height: 20px; fill: currentColor; }
+  .social:hover { background: var(--gold); color: var(--maroon); transform: translateY(-3px); }
+  .tiny { margin-top: 36px; font-size: .75rem; opacity: .5; }
+
+  @media (max-width: 720px) {
+    .clock { grid-template-columns: repeat(3, 1fr); row-gap: 22px; }
+    .stats { grid-template-columns: 1fr; gap: 0; }
+    .company-bg { background-attachment: scroll; }
+    .seal { width: 64px; height: 64px; font-size: 1.2rem; bottom: 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .mandala, .rangoli-bg, .strand, .diya .flame { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="fireworks"></canvas>
+<div id="petals"></div>
+<div class="copy-toast" id="toast">Copied!</div>
+
+<!-- ============ 1. CURTAIN STAGE ============ -->
+<section id="stage">
+  <div class="sticky">
+    <div class="valance"></div>
+    <div class="toran" id="toran"></div>
+
+    <div class="hero" id="hero">
+      <div class="frame-wrap">
+        <svg class="mandala slow" data-mandala="24" viewBox="-100 -100 200 200"></svg>
+        <svg class="mandala" data-mandala="16" viewBox="-100 -100 200 200"></svg>
+        <div class="photo-frame"><img src="raveendra.png" alt="Raveendra"></div>
+      </div>
+      <div class="kicker">✦ Shubh Vidaai · With Gratitude ✦</div>
+      <div class="name">Raveendra</div>
+      <div class="sub"><b>36 Glorious Years</b> at <b>TVS Electronics</b> · 1990 – 2026</div>
+      <div class="badge">Employee No. 100471</div>
+    </div>
+
+    <div class="curtain left" id="curtainL"><div class="tassel"></div></div>
+    <div class="curtain right" id="curtainR"><div class="tassel"></div></div>
+
+    <div class="curtain-title" id="curtainTitle">
+      <h1>A Journey of a Lifetime</h1>
+      <p>36 years · countless memories · one big thank you</p>
+      <div class="scroll-hint"><span class="arrow"></span>Scroll to open</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. JOURNEY TIMER ============ -->
+<section class="panel" id="journey">
+  <div class="company-bg fallback" id="companyBg">
+    <!-- stylised factory / campus silhouette, replaced by company.jpg if present -->
+    <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+      <defs>
+        <linearGradient id="bld" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c8901a"/><stop offset="1" stop-color="#5c0a1e"/></linearGradient>
+      </defs>
+      <g fill="url(#bld)">
+        <rect x="40" y="230" width="160" height="190"/>
+        <rect x="200" y="160" width="220" height="260"/>
+        <rect x="420" y="90" width="360" height="330"/>
+        <rect x="780" y="170" width="200" height="250"/>
+        <rect x="980" y="240" width="180" height="180"/>
+        <polygon points="420,90 600,30 780,90"/>
+        <rect x="905" y="80" width="26" height="110"/>
+        <rect x="945" y="110" width="22" height="80"/>
+      </g>
+      <g id="windows" fill="#ffd36b" opacity=".7"></g>
+      <text x="600" y="150" text-anchor="middle" font-family="Cinzel Decorative, serif" font-weight="900" font-size="32" textLength="320" lengthAdjust="spacingAndGlyphs" fill="#2b0410">TVS ELECTRONICS</text>
+    </svg>
+  </div>
+  <div class="inner">
+    <h2 class="section-title reveal">The Journey So Far</h2>
+    <div class="divider reveal">❖</div>
+    <div class="company-name reveal">Years of dedication at TVS Electronics</div>
+    <div class="dates reveal">
+      <div class="date-chip"><small>Joined</small><b>17 April 1990</b></div>
+      <span class="dash">⟶</span>
+      <div class="date-chip"><small>Retires</small><b>3 November 2026</b></div>
+    </div>
+
+    <div class="clock reveal" id="clock">
+      <div class="unit"><div class="num" id="tY">0</div><div class="lbl">Years</div></div>
+      <div class="unit"><div class="num" id="tM">0</div><div class="lbl">Months</div></div>
+      <div class="unit"><div class="num" id="tD">0</div><div class="lbl">Days</div></div>
+      <div class="unit"><div class="num" id="th">0</div><div class="lbl">Hours</div></div>
+      <div class="unit"><div class="num" id="tm">0</div><div class="lbl">Minutes</div></div>
+      <div class="unit"><div class="num" id="ts">0</div><div class="lbl">Seconds</div></div>
+    </div>
+    <p class="timer-note reveal" id="timerNote"></p>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="big" id="sDays">0</div><div class="small">days of showing up</div></div>
+      <div class="stat"><div class="big">∞</div><div class="small">cups of office chai &amp; friendships</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. THE LETTER ============ -->
+<section class="panel" id="letter">
+  <svg class="rangoli-bg a" data-mandala="20" viewBox="-100 -100 200 200"></svg>
+  <svg class="rangoli-bg b" data-mandala="12" viewBox="-100 -100 200 200"></svg>
+  <h2 class="section-title reveal">A Letter From The Heart</h2>
+  <div class="divider reveal">❖</div>
+
+  <div class="scroll-paper" id="scrollPaper">
+    <div class="rod"></div>
+    <div class="paper">
+      <div class="om">ॐ</div>
+      <p class="greet">Dear Friends &amp; Colleagues,</p>
+      <p>On 17th April 1990, I walked through the gates of TVS Electronics with a young heart and big dreams. Thirty-six years later, I walk out with something far greater — a family.</p>
+      <p>To my seniors who guided me, my colleagues who stood beside me, and my juniors who taught me more than they know — thank you. Every challenge we solved, every cup of tea we shared and every festival we celebrated together is a memory I will treasure forever.</p>
+      <p>I am retiring from work, but never from our friendships. Please keep in touch — my door, my phone and my heart are always open.</p>
+      <div class="signoff" id="signoff">
+        <div class="with">With gratitude &amp; love,</div>
+        <div class="signature">Raveendra</div>
+        <div class="meta">Emp. No. 100471 · TVS Electronics</div>
+      </div>
+      <div class="seal">R</div>
+    </div>
+    <div class="rod"></div>
+  </div>
+</section>
+
+<!-- ============ 4. CONNECT ============ -->
+<section class="panel" id="connect">
+  <h2 class="section-title reveal">Let's Stay Connected</h2>
+  <div class="divider reveal">❖</div>
+  <p class="connect-lead reveal">The office may change, but the bonds remain. Drop a message, share an old photo, or just call to say hello!</p>
+
+  <div class="cards">
+    <a class="card reveal" href="https://mail.google.com/mail/?view=cm&fs=1&to=ra.raveendra@gmail.com&su=Happy%20Retirement%2C%20Raveendra!&body=Dear%20Raveendra%2C%0A%0A" target="_blank" rel="noopener">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+      <h3>Email</h3>
+      <p>ra.raveendra@gmail.com</p>
+      <span class="tap">Tap to write</span>
+    </a>
+    <a class="card reveal" href="tel:+919894402119" data-copy="+91 98944 02119">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+      <h3>Phone</h3>
+      <p>+91 98944 02119</p>
+      <span class="tap">Tap to call</span>
+    </a>
+    <a class="card reveal" href="https://wa.me/919894402119?text=Happy%20Retirement%2C%20Raveendra!%20%F0%9F%8E%89" target="_blank" rel="noopener">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg></div>
+      <h3>WhatsApp</h3>
+      <p>Send your wishes</p>
+      <span class="tap">Tap to chat</span>
+    </a>
+  </div>
+
+  <div class="diyas reveal">
+    <div class="diya"><div class="flame"></div><div class="bowl"></div></div>
+    <div class="diya"><div class="flame"></div><div class="bowl"></div></div>
+    <div class="diya"><div class="flame"></div><div class="bowl"></div></div>
+    <div class="diya"><div class="flame"></div><div class="bowl"></div></div>
+    <div class="diya"><div class="flame"></div><div class="bowl"></div></div>
+  </div>
+
+  <div class="final-wish reveal">Happy Retirement!</div>
+  <p class="reveal" style="opacity:.85">Here's to new beginnings, slow mornings and endless happiness.</p>
+  <button class="launch reveal" id="launch">🎆 Celebrate with fireworks</button>
+</section>
+
+<!-- ============ 5. CREDITS ============ -->
+<footer>
+  <div class="credit-label">Website designed &amp; developed by</div>
+  <div class="credit-name">Vaibhav</div>
+  <div class="credit-sub">made with <span class="heart">❤</span> for Appa</div>
+  <div class="socials">
+    <a class="social" href="https://github.com/vaibhav-pyy" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+      github.com/vaibhav-pyy
+    </a>
+    <a class="social" href="https://www.linkedin.com/in/vaibhav-pyy" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+      linkedin.com/in/vaibhav-pyy
+    </a>
+  </div>
+  <div class="tiny">© 2026 · A tribute to 36 years of dedication at TVS Electronics</div>
+</footer>
+
+<script>
+(() => {
+  const JOIN = new Date(1990, 3, 17, 9, 0, 0);       // 17 Apr 1990, 9:00 AM
+  const RETIRE = new Date(2026, 10, 3, 17, 30, 0);   // 3 Nov 2026, 5:30 PM
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- mandalas / rangoli ---------- */
+  document.querySelectorAll('[data-mandala]').forEach(svg => {
+    const n = +svg.dataset.mandala;
+    const ns = 'http://www.w3.org/2000/svg';
+    const colors = ['#f5c542', '#ff9f1c', '#e8457c', '#ffe9a3'];
+    let html = '';
+    for (let ring = 0; ring < 4; ring++) {
+      const r = 30 + ring * 17, len = 16 - ring * 1.5, w = 6 - ring;
+      const count = n + ring * 4;
+      for (let i = 0; i < count; i++) {
+        const a = (360 / count) * i + (ring % 2 ? 180 / count : 0);
+        html += `<ellipse cx="0" cy="${-r}" rx="${w}" ry="${len}" fill="none" stroke="${colors[ring]}" stroke-width="1.4" transform="rotate(${a})"/>`;
+        if (ring === 3) html += `<circle cx="0" cy="${-r - len - 4}" r="2" fill="${colors[1]}" transform="rotate(${a})"/>`;
+      }
+      html += `<circle r="${r - len + 2}" fill="none" stroke="${colors[ring]}" stroke-width=".6" stroke-dasharray="2 3"/>`;
+    }
+    svg.innerHTML = html;
+  });
+
+  /* ---------- toran ---------- */
+  const toran = document.getElementById('toran');
+  const strands = Math.max(8, Math.floor(innerWidth / 60));
+  for (let i = 0; i < strands; i++) {
+    const s = document.createElement('div');
+    s.className = 'strand';
+    const len = 3 + (i % 2 ? 2 : 0) + (i % 3 === 0 ? 1 : 0);
+    for (let j = 0; j < len; j++) {
+      const b = document.createElement('div');
+      b.className = 'bloom' + (j % 3 === 2 ? ' red' : '');
+      s.appendChild(b);
+    }
+    const leaf = document.createElement('div');
+    leaf.className = 'leaf-tip';
+    s.appendChild(leaf);
+    toran.appendChild(s);
+  }
+
+  /* ---------- building windows for fallback bg ---------- */
+  const win = document.getElementById('windows');
+  let w = '';
+  [[60,250,140,160],[215,185,190,220],[440,170,320,240],[795,195,170,210],[995,260,150,150]].forEach(([x,y,wd,ht]) => {
+    for (let yy = y; yy < y + ht - 20; yy += 30)
+      for (let xx = x; xx < x + wd - 20; xx += 34)
+        if (Math.random() > .25) w += `<rect x="${xx}" y="${yy}" width="20" height="14" rx="2"/>`;
+  });
+  win.innerHTML = w;
+
+  /* use a real company photo if company.jpg sits next to this file */
+  const bg = document.getElementById('companyBg');
+  const probe = new Image();
+  probe.onload = () => { bg.classList.remove('fallback'); bg.style.backgroundImage = `url(${probe.src})`; bg.querySelector('svg').remove(); };
+  probe.src = 'company.jpg';
+
+  /* ---------- curtain scroll ---------- */
+  const stage = document.getElementById('stage');
+  const L = document.getElementById('curtainL'), R = document.getElementById('curtainR');
+  const title = document.getElementById('curtainTitle'), hero = document.getElementById('hero');
+  let celebrated = false;
+  function onScroll() {
+    const rect = stage.getBoundingClientRect();
+    const total = stage.offsetHeight - innerHeight;
+    const p = Math.min(1, Math.max(0, -rect.top / (total * 0.75)));
+    const e = 1 - Math.pow(1 - p, 3);
+    L.style.transform = `translateX(${-e * 100}%) scaleX(${1 - e * .35})`;
+    R.style.transform = `translateX(${e * 100}%) scaleX(${1 - e * .35})`;
+    title.style.opacity = Math.max(0, 1 - p * 3);
+    title.style.transform = `translate(-50%, calc(-50% - ${p * 80}px))`;
+    hero.style.opacity = .15 + e * .85;
+    hero.style.transform = `scale(${.85 + e * .15})`;
+    if (p > .85 && !celebrated) { celebrated = true; grandShow(5); }
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', onScroll);
+  onScroll();
+
+  /* ---------- reveal on scroll ---------- */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: .2 });
+  document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 0.12 + 's'; io.observe(el); });
+
+  /* ---------- timer ---------- */
+  const pad = n => String(n).padStart(2, '0');
+  function diff(from, to) {
+    let y = to.getFullYear() - from.getFullYear();
+    let m = to.getMonth() - from.getMonth();
+    let d = to.getDate() - from.getDate();
+    let ms = (to.getHours() * 3600 + to.getMinutes() * 60 + to.getSeconds()) - (from.getHours() * 3600 + from.getMinutes() * 60 + from.getSeconds());
+    if (ms < 0) { ms += 86400; d--; }
+    if (d < 0) { d += new Date(to.getFullYear(), to.getMonth(), 0).getDate(); m--; }
+    if (m < 0) { m += 12; y--; }
+    return { y, m, d, h: Math.floor(ms / 3600), min: Math.floor(ms % 3600 / 60), s: ms % 60 };
+  }
+  const els = ['tY','tM','tD','th','tm','ts'].map(id => document.getElementById(id));
+  const note = document.getElementById('timerNote');
+  function tick() {
+    const now = new Date();
+    const end = now < RETIRE ? now : RETIRE;
+    const t = diff(JOIN, end);
+    [t.y, t.m, t.d, t.h, t.min, t.s].forEach((v, i) => els[i].textContent = i < 1 ? v : pad(v));
+    if (now < RETIRE) {
+      const left = Math.ceil((RETIRE - now) / 86400000);
+      note.innerHTML = `…and still counting! Only <b>${left} day${left > 1 ? 's' : ''}</b> to go until the grand farewell.`;
+    } else {
+      note.innerHTML = `<b>${t.y} years, ${t.m} months &amp; ${t.d} days</b> of dedication, loyalty and love. 🙏`;
+    }
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* count-up stats */
+  const totalDays = Math.floor((Math.min(Date.now(), RETIRE) - JOIN) / 86400000);
+  function countUp(el, target) {
+    const t0 = performance.now(), dur = 2200;
+    (function step(t) {
+      const k = Math.min(1, (t - t0) / dur), v = Math.floor(target * (1 - Math.pow(1 - k, 4)));
+      el.textContent = v.toLocaleString('en-IN');
+      if (k < 1) requestAnimationFrame(step);
+    })(t0);
+  }
+  const statIO = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { countUp(document.getElementById('sDays'), totalDays); statIO.disconnect(); }
+  }), { threshold: .4 });
+  statIO.observe(document.querySelector('.stats'));
+
+  /* ---------- letter unrolling + line-by-line + signature ---------- */
+  const paper = document.getElementById('scrollPaper');
+  const lines = paper.querySelectorAll('.paper p');
+  const signoff = document.getElementById('signoff');
+  const letterIO = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    letterIO.disconnect();
+    paper.classList.add('open');
+    lines.forEach((p, i) => setTimeout(() => p.classList.add('show'), 900 + i * 1100));
+    setTimeout(() => {
+      signoff.classList.add('show');
+      setTimeout(() => grandShow(3), 3500);
+    }, 900 + lines.length * 1100);
+  }), { threshold: .25 });
+  letterIO.observe(paper);
+
+  /* ---------- copy contact on long-press / right-click ---------- */
+  const toast = document.getElementById('toast');
+  document.querySelectorAll('[data-copy]').forEach(a => a.addEventListener('contextmenu', ev => {
+    ev.preventDefault();
+    navigator.clipboard?.writeText(a.dataset.copy).then(() => {
+      toast.textContent = `Copied ${a.dataset.copy}`;
+      toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 1800);
+    });
+  }));
+
+  /* ---------- falling petals ---------- */
+  const petalBox = document.getElementById('petals');
+  const petalColors = ['#ff9f1c', '#ff6b1a', '#f5c542', '#e8457c', '#c4102c'];
+  function petal() {
+    if (document.hidden || petalBox.childElementCount > 40) return;
+    const p = document.createElement('div');
+    p.className = 'petal';
+    p.style.left = Math.random() * 100 + 'vw';
+    p.style.background = petalColors[Math.floor(Math.random() * petalColors.length)];
+    const s = .6 + Math.random() * .8;
+    p.style.width = 14 * s + 'px'; p.style.height = 18 * s + 'px';
+    p.style.animationDuration = 7 + Math.random() * 6 + 's';
+    p.addEventListener('animationend', () => p.remove());
+    petalBox.appendChild(p);
+  }
+  if (!reduceMotion) setInterval(petal, 550);
+
+  /* ---------- fireworks ---------- */
+  const cv = document.getElementById('fireworks'), ctx = cv.getContext('2d');
+  let W, H, parts = [], rockets = [], running = false;
+  const dpr = Math.min(2, devicePixelRatio || 1);
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+  const fwColors = ['#f5c542', '#ff9f1c', '#ff6b1a', '#e8457c', '#ffe9a3', '#7fffd4', '#ffffff'];
+
+  function launch(x, ty) {
+    rockets.push({ x, y: H, tx: x + (Math.random() - .5) * 80, ty, vy: -(9 + Math.random() * 3), c: fwColors[Math.floor(Math.random() * fwColors.length)] });
+    if (!running) { running = true; requestAnimationFrame(loop); }
+  }
+  function burst(x, y, c) {
+    const n = 70 + Math.floor(Math.random() * 40), c2 = fwColors[Math.floor(Math.random() * fwColors.length)];
+    for (let i = 0; i < n; i++) {
+      const a = (Math.PI * 2 * i) / n, sp = 2 + Math.random() * 4.5;
+      parts.push({ x, y, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp, life: 1, decay: .010 + Math.random() * .012, c: i % 3 ? c : c2 });
+    }
+  }
+  function loop() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'lighter';
+    rockets = rockets.filter(r => {
+      r.y += r.vy; r.vy *= .985; r.x += (r.tx - r.x) * .02;
+      ctx.fillStyle = r.c; ctx.beginPath(); ctx.arc(r.x, r.y, 2.5, 0, 7); ctx.fill();
+      ctx.fillStyle = 'rgba(255,200,120,.4)'; ctx.fillRect(r.x - 1, r.y, 2, 18);
+      if (r.y <= r.ty || r.vy > -1.5) { burst(r.x, r.y, r.c); return false; }
+      return true;
+    });
+    parts = parts.filter(p => {
+      p.x += p.vx; p.y += p.vy; p.vy += .06; p.vx *= .985; p.vy *= .985; p.life -= p.decay;
+      if (p.life <= 0) return false;
+      ctx.globalAlpha = p.life; ctx.fillStyle = p.c;
+      ctx.beginPath(); ctx.arc(p.x, p.y, 2.2, 0, 7); ctx.fill();
+      return true;
+    });
+    ctx.globalAlpha = 1;
+    if (rockets.length || parts.length) requestAnimationFrame(loop);
+    else { running = false; ctx.clearRect(0, 0, W, H); }
+  }
+  function grandShow(n) {
+    if (reduceMotion) return;
+    for (let i = 0; i < n; i++) setTimeout(() => launch(W * (.15 + Math.random() * .7), H * (.12 + Math.random() * .3)), i * 350);
+  }
+  window.grandShow = grandShow;
+
+  document.getElementById('launch').addEventListener('click', () => grandShow(10));
+  /* tap anywhere (not on a link/button) to set off a firework there */
+  addEventListener('click', e => {
+    if (e.target.closest('a, button')) return;
+    if (!reduceMotion) launch(e.clientX, Math.max(60, e.clientY));
+  });
+})();
+</script>
+</body>
+</html>
