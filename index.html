@@ -89,7 +89,7 @@
   /* ---------- 1. curtain stage ---------- */
   #stage { height: 320vh; position: relative; }
   .sticky {
-    position: sticky; top: 0; height: 100vh; overflow: hidden;
+    position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden;
     background:
       radial-gradient(ellipse at 50% 40%, rgba(255,190,80,.35), transparent 60%),
       radial-gradient(ellipse at 50% 120%, #7a1026, var(--maroon-deep) 70%);
@@ -454,7 +454,14 @@
   .social:hover { background: var(--gold); color: var(--maroon); transform: translateY(-3px); }
   .tiny { margin-top: 36px; font-size: .75rem; opacity: .5; }
 
+  .sub, .curtain-title h1, .curtain-title p, .section-title, .credit-label, .connect-lead, .timer-note, .stat .small { text-wrap: balance; }
   @media (max-width: 720px) {
+    .dates { gap: 10px; }
+    .dates .dash { display: none; }
+    .date-chip { padding: 8px 12px; }
+    .date-chip b { font-size: .95rem; }
+    .credit-label { letter-spacing: 3px; }
+    .petal { opacity: .55; }
     .clock { grid-template-columns: repeat(3, 1fr); row-gap: 22px; }
     .stats { grid-template-columns: 1fr; gap: 0; }
     .company-bg { background-attachment: scroll; }
@@ -793,7 +800,7 @@
   const petalBox = document.getElementById('petals');
   const petalColors = ['#ff9f1c', '#ff6b1a', '#f5c542', '#e8457c', '#c4102c'];
   function petal() {
-    if (document.hidden || petalBox.childElementCount > 40) return;
+    if (document.hidden || petalBox.childElementCount > (innerWidth < 720 ? 12 : 40)) return;
     const p = document.createElement('div');
     p.className = 'petal';
     p.style.left = Math.random() * 100 + 'vw';
@@ -804,7 +811,7 @@
     p.addEventListener('animationend', () => p.remove());
     petalBox.appendChild(p);
   }
-  if (!reduceMotion) setInterval(petal, 550);
+  if (!reduceMotion) setInterval(petal, innerWidth < 720 ? 1100 : 550);
 
   /* ---------- fireworks ---------- */
   const cv = document.getElementById('fireworks'), ctx = cv.getContext('2d');
